@@ -7,7 +7,7 @@
                 @click='switchTab(item.path)'
             >
                 <img src="$route.path.includes(item.path) ? item.selected : item.active" alt="">
-                <span>{{item.title}}</span> //class='$route.path.includes(item.path) ? "active" : "" '
+                <span>{{item.title}}</span> 
             </li>
         </ul>
     </div>
@@ -21,26 +21,26 @@ export default {
                 {
                     title:'首頁',
                     path:'/home',
-                    active:'../桌面/test/home.png',
-                    selected:'../桌面/test/home-select.png'
+                    active:'/home.png',
+                    selected:'/home-select.png'
                 },
                 {
                     title:'分類',
                     path:'/list',
-                    active:'../桌面/test/list.png',
-                    selected:'../桌面/test/list-select.png'
+                    active:'/list.png',
+                    selected:'/list-select.png'
                 },
                 {
                     title:'購物車',
                     path:'/cart',
-                    active:'../桌面/test/cart.png',
-                    selected:'../桌面/test/cart-select.png'
+                    active:'/cart.png',
+                    selected:'/cart-select.png'
                 },
                 {
                     title:'我的',
                     path:'/my',
-                    active:'../桌面/test/my.png',
-                    selected:'../桌面/test/my-select.png'
+                    active:'/my.png',
+                    selected:'/my-select.png'
                 }
             ]
         }

@@ -1,14 +1,14 @@
 <template>
-    <div class='list'>
-        這是list
-        <Tabbar> </Tabber>
+    <div class='my'>
+        這是my
+        <Tabbar> </Tabbar>
     </div>
 </template>
 
 <script>
-import Tabbar from '../componments/tabbar.vue'
+import Tabbar from '@/componments/tabbar.vue'
 export default {
-    name: "list",
+    name: "my",
     componments:{
         Tabbar
     }
