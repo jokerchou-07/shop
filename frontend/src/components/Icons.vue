@@ -2,7 +2,7 @@
     <ul class="icons">
         <li v-for='(item,index) in iconsList' :key='index'>
             <span>{{item.title}}</span>
-            <img src="{{item.imgUrl}}" alt="">
+            <img :src="item.imgUrl" alt="">
         </li>
     </ul>
 </template>
@@ -51,7 +51,7 @@ export default {
     justify-content: space-around;
     padding:10px;
 }
-.icon li{
+.icons li{
     display: flex;
     flex-direction:column;
     align-items: center;
