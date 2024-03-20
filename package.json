@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "vue3-popper": "^1.5.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.0.4"
+  }
+}

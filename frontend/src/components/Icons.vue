@@ -49,16 +49,21 @@ export default {
 .icons{
     display: flex;
     justify-content: space-around;
-    padding:10px;
+    padding:20px;
+    margin-left: 200px;
+    margin-top: 250px;
+    
 }
 .icons li{
     display: flex;
     flex-direction:column;
     align-items: center;
+    margin-right: 100px;
+    flex-direction: column;
 }
 .icons img{
-    width:38px;
-    height:38px;
+    width:60px;
+    height:50px;
 }
 .icon span{
     font-size:20px;

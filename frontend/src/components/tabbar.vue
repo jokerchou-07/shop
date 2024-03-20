@@ -74,12 +74,16 @@ export default {
 .tabbar ul li{
     display:flex;
     flex-direction:column;
+    align-items: center;
 }
 .tabbar ul li img{
     width: 31px;
     height: 31px;
 }
 .tabbar ul li span{
+    display:flex;
     font-size:16px;
+    text-align: center;
+    color:#fff;
 }
 </style>
