@@ -1,6 +1,16 @@
 <template>
   <div class="home">
     <Header></Header>
+    <div class="fun-tabs">
+      <div
+        v-for="(tab, index) in tabs"
+        :key="tab.name"
+        :class="{ 'fun-tab': true, 'active': index === activeIndex }"
+        @click="selectTab(index)"
+      >
+        {{ tab.title }}
+      </div>
+    </div>
     <Swiper></Swiper>
     <Icons></Icons>
     <Like></Like>
@@ -19,16 +29,7 @@
             <Ford></Ford>
         </div>
     </div>
-    <div class="fun-tabs">
-      <div
-        v-for="(tab, index) in tabs"
-        :key="tab.name"
-        :class="{ 'fun-tab': true, 'active': index === activeIndex }"
-        @click="selectTab(index)"
-      >
-        {{ tab.title }}
-      </div>
-    </div>
+    
     <section>
       <div v-for="tab in tabs" :key="tab.ref" :ref="tab.ref">
         <img :src="`/${tab.ref}.png`" alt="">

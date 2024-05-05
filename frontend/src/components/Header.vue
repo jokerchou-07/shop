@@ -64,7 +64,7 @@ export default {
 <style scoped>
 header{
     display:flex;
-    justify-content: space-around;
+    justify-content: space-around; /*flex*/
     position: fixed;
     align-items:center;
     top:0;
@@ -85,8 +85,7 @@ header h1 img{
 }
 
 .search{
-    position: relative;
-    display: flex;
+    /*display: flex;*/
     align-items:center;
     width: 300px;
     height: 30px;
